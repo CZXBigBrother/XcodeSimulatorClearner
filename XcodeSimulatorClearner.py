@@ -31,7 +31,7 @@ def deleteFile():
     startTime = time.time()
     files = setPath();
     for afile in files:
-        # shutil.rmtree(afile,True)
+        shutil.rmtree(afile,True)
         print '删除:' + afile
     print('删除完毕...耗时:'+ str(time.time() - startTime))
     print('共删除{0}个编译文件'.format(len(files)))
